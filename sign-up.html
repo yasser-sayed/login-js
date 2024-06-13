@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="style/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="style/style.css" />
+    <title>sign-up</title>
+  </head>
+  <body class="d-flex justify-content-center align-items-center">
+    <!-- main div start -->
+    <div class="main d-flex flex-column w-50 shadow-lg mt-5">
+      <h1
+        class="bg-primary text-white d-flex justify-content-center align-content-center p-3"
+      >
+        Create Account
+      </h1>
+
+      <!-- form start -->
+      <form
+        action="index.html"
+        onsubmit="return formChecker()"
+        class="pt-4 pb-4 bg-white fw-bold d-flex justify-content-center align-items-center flex-column gap-4"
+      >
+        <div class="d-flex gap-4 w-100 pe-5">
+          <!-- frst name start -->
+          <div class="d-flex flex-column gap-1 w-50 ps-5">
+            <label class="text-primary frstNameLab">First Name :</label>
+            <input
+              class="frstNameInp form-control text-primary"
+              type="text"
+              placeholder="Enter your first name"
+              title="Required-(FirstName only without any space , Shall Be More Than 2 Characters)"
+            />
+          </div>
+          <!-- frst name end -->
+
+          <!-- last name start -->
+          <div class="d-flex flex-column gap-1 w-50 ps-5">
+            <label class="text-primary lastNameLab">Last Name :</label>
+            <input
+              class="lastNameInp form-control text-primary"
+              type="text"
+              placeholder="Enter your last name"
+              title="Required-(Lastname only without any space , Shall Be More Than 2 Characters)"
+            />
+          </div>
+          <!-- last name end -->
+        </div>
+
+        <div class="d-flex gap-4 w-100 pe-5">
+          <!-- email start -->
+          <div class="d-flex flex-column gap-1 w-50 ps-5">
+            <label class="text-primary emailLab">Email :</label>
+            <input
+              class="emailInp form-control text-primary"
+              type="text"
+              placeholder="Enter your Email address"
+              title="Email shall be like (name@domain.com)"
+            />
+          </div>
+          <!-- email end -->
+
+          <!-- phone num start -->
+          <div class="d-flex flex-column gap-1 w-50 ps-5">
+            <label class="text-primary phoneLab">Phone Number :</label>
+            <input
+              class="phoneInp form-control text-primary"
+              type="text"
+              placeholder="Enter you phone number"
+              title="phone number shall be 11 numbers like (01xx-xxx-xxxx)"
+            />
+          </div>
+          <!-- phone num end -->
+        </div>
+
+        <div class="d-flex gap-4 w-100 pe-5">
+          <!-- pass start -->
+          <div class="d-flex flex-column gap-1 w-50 ps-5">
+            <label class="text-primary passLab">Password :</label>
+            <input
+              class="passInp form-control text-primary"
+              type="password"
+              placeholder="Enter your password"
+              title="password shall be more than 7 characters | should includes(!)"
+            />
+          </div>
+          <!-- pass end -->
+
+          <!-- conf pass start -->
+          <div class="d-flex flex-column gap-1 w-50 ps-5">
+            <label class="text-primary confPassLab">Confirm Password :</label>
+            <input
+              class="confPassInp form-control text-primary"
+              type="password"
+              placeholder="confirm your password"
+              title="password confirmation shall be the same with password"
+            />
+          </div>
+          <!-- conf pass end -->
+        </div>
+
+        <div class="d-flex gap-4 w-100 pe-5">
+          <!-- gender start -->
+          <div class="d-flex flex-column gap-1 w-50 ps-5">
+            <label class="text-primary genderLab">Gender :</label>
+            <div class="p-1">
+              <input type="radio" class="maleInp" id="male" name="gender" />
+              <label class="text-secondary" for="male">Male</label>
+            </div>
+            <div>
+              <input type="radio" class="femaleInp" id="Female" name="gender" />
+              <label class="text-secondary" for="Female">Female</label>
+            </div>
+          </div>
+          <!-- gender end -->
+
+          <!-- brthdate start -->
+          <div class="d-flex flex-column gap-1 w-50 ps-5">
+            <label class="text-primary brthLab">Birthdate :</label>
+            <input type="date" class="brthInp form-control text-primary" />
+          </div>
+          <!-- brthdate end -->
+        </div>
+
+        <!-- submet and reset start -->
+        <div>
+          <input type="reset" value="Reset" class="btn btn-primary" />
+          <input type="submit" value="Register" class="btn btn-primary" />
+        </div>
+        <!-- submet and reset end -->
+      </form>
+      <!-- form end -->
+    </div>
+    <!-- main div end -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sign-up.js"></script>
+  </body>
+</html>

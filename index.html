@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="style/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="style/style.css" />
+    <title>FaceBook Log-In</title>
+  </head>
+  <body
+    class="container d-flex align-self-center justify-content-center align-items-center flex-lg-row flex-column"
+  >
+    <!-- logo div start -->
+    <div class="logo w-50 pe-5 ps-lg-4">
+      <h1 class="text-primary fw-bold align-self-center fs-1">FaceBook</h1>
+      <h2>
+        Facebook helps you connect and share with the people in your life.
+      </h2>
+    </div>
+    <!-- logo div end -->
+
+    <!-- form div start -->
+    <div
+      class="form w-75 d-flex flex-column mt-5 justify-content-center align-items-center"
+    >
+      <!-- form start -->
+      <form
+        action="welcome.html"
+        onsubmit="return formChecker()"
+        class="bg-white d-flex flex-column gap-3 w-50 p-3 shadow-lg rounded mt-5"
+      >
+        <p class="warningMsg fw-bold fs-5 d-none loginError">
+          Invalid Username Or Password <i class="fa-solid fa-hand"></i>
+        </p>
+        <input
+          type="text"
+          placeholder="Email address or phone number"
+          class="p-3 border rounded emailInp"
+        />
+        <input
+          type="password"
+          class="p-3 border rounded passInp"
+          placeholder="Password"
+        />
+
+        <!-- password hider start -->
+        <div>
+          <input type="checkbox" class="passHider" />
+          <label class="text-primary fw-bolder ps-1">Show password</label>
+        </div>
+        <!-- password hider end -->
+
+        <p class="warningMsg d-none passWarning">
+          <i class="fa-solid fa-xmark passIcon"></i> Password should be more
+          than
+          <span class="fw-bold">7 characters</span>
+        </p>
+
+        <input
+          type="submit"
+          class="p-2 fw-bold btn btn-primary border rounded"
+          value="Log in"
+        />
+        <a
+          class="link-offset-1-hover text-center link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+          href="#"
+          >Forgotten password?</a
+        >
+        <hr />
+        <button
+          class="btn btn-success w-50 bg-gradient align-self-center gedo p-2"
+        >
+          <a class="text-decoration-none text-light fw-bold" href="sign-up.html"
+            >Create new account</a
+          >
+        </button>
+      </form>
+      <!-- form end -->
+
+      <!-- little anchor start -->
+      <div>
+        <p>
+          <a href="" class="text-decoration-none fw-bold text-black"
+            >Create a new page</a
+          >
+          for a celebrity, brand or business.
+        </p>
+      </div>
+      <!-- little anchor end -->
+    </div>
+    <!-- form div end -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
